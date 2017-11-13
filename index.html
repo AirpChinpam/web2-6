@@ -18,7 +18,7 @@
    renderer.setSize( window.innerWidth, window.innerHeight );
    document.body.appendChild( renderer.domElement );
    
-   //リサイズ
+   // リサイズ
    window.addEventListener('resize',function(){
       renderer.setSize(window.innerWidth,window.innerHeight);
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -38,7 +38,7 @@
       
       var delta_time = clock.getDelta();
       mesh.rotation.x += 0.1 * delta_time;
-      mesh.rotation.y += 0.3 * delta_time;
+      mesh.rotation.y += 0.1 * delta_time;
       
       renderer.render(scene, camera);
      };
